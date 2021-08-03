@@ -14,8 +14,8 @@ if(isset($_ENV['CLEARDB_DATABASE_URL'])) {
 	$parts = parse_url($_ENV['CLEARDB_DATABASE_URL']);
 	$databaseConfig['type'] = 'MySQLPDODatabase';
 	$databaseConfig['server'] = $parts['host'];
-	$databaseConfig['username'] = $parts['user'];
-	$databaseConfig['password'] = $parts['pass'];
+	$databaseConfig['username'] = $parts['admin'];
+	$databaseConfig['password'] = $parts['password'];
 	$databaseConfig['database'] = trim($parts['path'], '/');
 	Security::setDefaultAdmin('heroku', 'yesletmeinplease');
 } else {
