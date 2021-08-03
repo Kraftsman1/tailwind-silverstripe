@@ -12,7 +12,7 @@ Member::set_password_validator($validator);
 if(isset($_ENV['CLEARDB_DATABASE_URL'])) {
 	global $databaseConfig;
 	$parts = parse_url($_ENV['CLEARDB_DATABASE_URL']);
-	$databaseConfig['type'] = 'MySQLDatabase';
+	$databaseConfig['type'] = 'MySQLPDODatabase';
 	$databaseConfig['server'] = $parts['host'];
 	$databaseConfig['username'] = $parts['user'];
 	$databaseConfig['password'] = $parts['pass'];
