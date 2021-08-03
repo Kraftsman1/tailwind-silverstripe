@@ -1,1 +1,3 @@
-$ElementalArea
+<%-- $ElementalArea --%>
+
+<% include Hero %>

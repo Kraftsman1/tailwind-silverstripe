@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="cyberpunk">
 <head>
     <% base_tag %>
     <meta charset="UTF-8">
@@ -13,9 +13,12 @@
     <title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %></title>
 </head>
 <body>
+
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <div id="app">
         <% include Header %>
         $Layout
+        <% include Footer %>
     </div>
 </body>
 </html>
