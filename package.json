@@ -7,8 +7,7 @@
     "start": "npx mix",
     "dev": "npm run watch",
     "watch": "npx mix watch",
-    "build": "npx mix build -p",
-    "heroku-postbuild": "echo Skip build on Heroku"
+    "build": "npx mix build -p"
   },
   "keywords": [],
   "author": "",
